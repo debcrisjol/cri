@@ -156,16 +156,28 @@
         <a href="#first-page"><i class="fa-solid fa-backward fa-2s"></i></a> 
 
         <div class="container m-5 m-2 ticket d-flex flex-column justify-content-center align-items-center h-100 w-50" >
-               
-         <h4>Lorem ipsum dolor sit amet.</h4>
-<p class="text-success"><b>Too much latin? Go back :) the site is in construction,only a test</b></p>
-               
-                <p>Lorem ipsum dolor sit amet Aperiam nam ut inventore corrupti saepe ea nostrum enim, placeat aspernatur fuga expedita!</p>
-
-               </p>
-
-               </div> 
-             
+          <div id="app">
+            <div class="container pt-4">
+              <div class="d-flex align-items-center justify-content-center">
+                   <input type="text" autocomplete="off" placeholder="write a new task..." v-model="tasks.name" @keyup.enter="newItem">
+                   <button class="btn btn-primary ms-3"@click="newItem">Have to Do</button>
+                </div>
+    
+             <ul class="task-list">
+                <li class="task-list-item" v-for="task in tasks">
+                    <label class="task-list-item-label">
+                        <input type="checkbox"><span> {{task.name}}</span>
+                    </label>
+                    <span class="delete-btn btn btn-danger m-2" title="Delete Task" @click="delItem(task)">   X   {{task.del}}</span>
+                </li>
+             </ul>
+                
+    
+            </div>
+    
+    
+        </div>
+        
              </div> 
 
     </section>
@@ -258,7 +270,8 @@
              </div> 
 
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body></html>
 </body>

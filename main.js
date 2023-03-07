@@ -3,8 +3,8 @@ var app= new Vue({
     data:{
         title: 'to do list',
         tasks:[
-            { name: 'Today : Traking customers'},
-            { name: 'Tommorow : print reports'},
+       
+            { name: 'Today : print reports'},
             { name: ' Weekly : cleaning stuff'},
             { name: 'Every day : reports'},
          

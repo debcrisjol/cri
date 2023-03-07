@@ -34,3 +34,5 @@ a:hover{ color:aqua!important;}
 @media ( min-width: 768px) and ( max-width: 1024px) {
   .login{width: 400px;}
 }
+
+

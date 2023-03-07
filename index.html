@@ -160,11 +160,11 @@
             <div class="container pt-4">
               <div class="d-flex align-items-center justify-content-center">
                    <input type="text" autocomplete="off" placeholder="write a new task..." v-model="tasks.name" @keyup.enter="newItem">
-                   <button class="btn btn-primary ms-3"@click="newItem">Have to Do</button>
+                   <button class="btn btn-primary m-2"@click="newItem">To Do</button>
                 </div>
     
-             <ul class="task-list">
-                <li class="task-list-item" v-for="task in tasks">
+             <ul class="task-list p-0">
+                <li class="task-list-item list-unstyled" v-for="task in tasks">
                     <label class="task-list-item-label">
                         <input type="checkbox"><span> {{task.name}}</span>
                     </label>

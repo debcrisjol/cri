@@ -21,12 +21,12 @@ body {
 .email{
     background-color: rgb(252, 251, 192);
 }
-.navbar>.nav{height:50px;
+.navbar>.nav{height:50px; background-color: rgb(0, 0, 0);
 }
 a,li { color:white!important;text-decoration: none;}
 .dropdown-item{ color:black!important;}
 
-
+.container>a{margin-top: 10%;}
 img{width:200px;
 height:10vh; margin:2%}
 img:hover{ filter:brightness(2);}
